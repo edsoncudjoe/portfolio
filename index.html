@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- REPLACE: page title and meta description with your name and description -->
+  <title>[YOUR NAME] — Photography &amp; Video</title>
+  <meta name="description" content="[YOUR NAME] — Photography and videography portfolio. [LOCATION / ONE-LINE DESCRIPTION]">
+
+  <!-- Open Graph (social sharing) — REPLACE with real values + a real og image URL -->
+  <meta property="og:title" content="[YOUR NAME] — Photography &amp; Video">
+  <meta property="og:description" content="Photography and videography portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://placehold.co/1200x630/eeeeee/999999"> <!-- REPLACE -->
+
+  <!-- REPLACE: add a real favicon at assets/favicon.ico -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <!-- REPLACE: your name -->
+    <a class="nav-name" href="index.html">[YOUR NAME]</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- ============================================
+         HOW TO ADD A NEW CATEGORY
+         ============================================
+         1. Create a new gallery page (copy photography.html
+            to e.g. events.html, change the page title and
+            the placeholder images).
+         2. Copy the block below (one <a class="category-card">…</a>)
+            and paste it inside .category-grid.
+         3. Update href, img src, alt, and the category title.
+         4. Mark replaced placeholder images by removing the
+            REPLACE comments.
+         ============================================ -->
+
+    <div class="category-grid">
+
+      <!-- REPLACE: category cover image -->
+      <a class="category-card" href="photography.html">
+        <img src="https://placehold.co/900x600/eeeeee/999999" alt="Photography" loading="lazy">
+        <span class="category-title">Photography</span>
+      </a>
+
+      <!-- REPLACE: category cover image -->
+      <a class="category-card" href="video.html">
+        <img src="https://placehold.co/900x600/eeeeee/999999" alt="Video" loading="lazy">
+        <span class="category-title">Video</span>
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <!-- REPLACE: name, year, email -->
+    [YOUR NAME] · 2026 · <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
+  </footer>
+
+</body>
+</html>
