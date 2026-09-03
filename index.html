@@ -31,6 +31,7 @@
     <a class="nav-name" href="index.html">Edson Cudjoe</a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="video.html">Video</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -38,31 +39,18 @@
 
   <main class="page">
 
-    <!-- ============================================
-         HOW TO ADD A NEW CATEGORY
-         ============================================
-         1. Create a new gallery page (copy photography.html
-            to e.g. events.html, change the page title and
-            the placeholder images).
-         2. Copy the block below (one <a class="category-card">…</a>)
-            and paste it inside .category-grid.
-         3. Update href, img src, alt, and the category title.
-         4. Mark replaced placeholder images by removing the
-            REPLACE comments.
-         ============================================ -->
+    <div class="gallery-grid">
 
-    <div class="category-grid">
-
-      <a class="category-card" href="photography.html">
-        <img src="content/images/_Lina-Barbican-London-5859-2.jpg" alt="Photography" loading="lazy">
-        <span class="category-title">Photography</span>
-      </a>
-
-      <!-- REPLACE: category cover image -->
-      <a class="category-card" href="video.html">
-        <img src="https://placehold.co/900x600/eeeeee/999999" alt="Video" loading="lazy">
-        <span class="category-title">Video</span>
-      </a>
+      <a href="content/images/_Lina-Barbican-London-5859-2.jpg"><img src="content/images/_Lina-Barbican-London-5859-2.jpg" alt="Lina, Barbican, London"></a>
+      <a href="content/images/Final_Flores-Mowgli_DSCF0028.jpg"><img src="content/images/Final_Flores-Mowgli_DSCF0028.jpg" alt="Flores Mowgli" loading="lazy"></a>
+      <a href="content/images/_DSCF6561.jpg"><img src="content/images/_DSCF6561.jpg" alt="Photograph" loading="lazy"></a>
+      <a href="content/images/DateCuenta_Ceramica_Mowgli_trabajando_DSCF0116.jpg"><img src="content/images/DateCuenta_Ceramica_Mowgli_trabajando_DSCF0116.jpg" alt="Date Cuenta Ceramica" loading="lazy"></a>
+      <a href="content/images/DSCF9664.jpg"><img src="content/images/DSCF9664.jpg" alt="Photograph" loading="lazy"></a>
+      <a href="content/images/Final_Flores-Mowgli_DSCF0354.jpg"><img src="content/images/Final_Flores-Mowgli_DSCF0354.jpg" alt="Flores Mowgli" loading="lazy"></a>
+      <a href="content/images/Final_Flores-Mowgli_DSCF0222.jpg"><img src="content/images/Final_Flores-Mowgli_DSCF0222.jpg" alt="Flores Mowgli" loading="lazy"></a>
+      <a href="content/images/DSCF9989%202.jpg"><img src="content/images/DSCF9989%202.jpg" alt="Photograph" loading="lazy"></a>
+      <a href="content/images/_Monica_Barbican-661.jpg"><img src="content/images/_Monica_Barbican-661.jpg" alt="Monica, Barbican" loading="lazy"></a>
+      <a href="content/images/_IMG_4443.jpg"><img src="content/images/_IMG_4443.jpg" alt="Photograph" loading="lazy"></a>
 
     </div>
 
@@ -72,6 +60,14 @@
     <!-- REPLACE: name, year, email -->
     Edson Cudjoe · 2026 · <a class="email-link" href="#" aria-label="Email"><img class="email-img" src="assets/img/email.svg" alt="Email"></a>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&larr;</button>
+    <img src="" alt="">
+    <button class="lightbox-next" aria-label="Next">&rarr;</button>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
