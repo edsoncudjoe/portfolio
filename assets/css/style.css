@@ -128,13 +128,15 @@ a {
   color: var(--text-light);
 }
 
-/* ---------- Gallery grid (aspect-ratio flexible 2-column) ---------- */
+/* ---------- Gallery grid (single-column feed, max 800px) ---------- */
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--gutter);
-  align-items: start; /* lets mixed aspect ratios sit naturally */
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: start;
 }
 
 .gallery-grid a {
@@ -279,6 +281,55 @@ a {
   opacity: 0.7;
 }
 
+/* ---------- Video page ---------- */
+
+.video-embed {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-info {
+  margin-top: 32px;
+}
+
+.video-title {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.video-role {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.video-synopsis {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
 /* ---------- Back link ---------- */
 
 .back-link {
@@ -310,7 +361,6 @@ a {
 
 @media (max-width: 768px) {
   .category-grid,
-  .gallery-grid,
   .about-layout {
     grid-template-columns: 1fr;
   }

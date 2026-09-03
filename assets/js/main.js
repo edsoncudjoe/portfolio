@@ -71,6 +71,7 @@
   galleryLinks.forEach(function (link, index) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
+      if (window.matchMedia('(max-width: 768px)').matches) return;
       open(index);
     });
   });
