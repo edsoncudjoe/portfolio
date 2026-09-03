@@ -1,4 +1,22 @@
 /* ============================================
+   Email obfuscation — build mailto from parts
+   so the raw address never appears in HTML
+   ============================================ */
+
+(function () {
+  'use strict';
+
+  var user = 'hello';
+  var domain = 'edsoncudjoe';
+  var tld = 'com';
+  var addr = user + '@' + domain + '.' + tld;
+
+  document.querySelectorAll('.email-link').forEach(function (el) {
+    el.setAttribute('href', 'mailto:' + addr);
+  });
+})();
+
+/* ============================================
    Minimal lightbox — vanilla JS, no libraries
    ESC / click-outside closes, arrows navigate
    ============================================ */
