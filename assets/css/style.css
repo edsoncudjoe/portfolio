@@ -244,6 +244,27 @@ a {
   border-bottom-color: var(--text-light);
 }
 
+.about-text h3,
+.about-text h4 {
+  font-weight: 400;
+  margin: 1.6em 0 0.6em;
+}
+
+.about-text h3 {
+  font-size: 1em;
+}
+
+.about-text h4 {
+  font-size: 1em;
+  color: var(--text-light);
+}
+
+.about-text ul {
+  max-width: 480px;
+  margin: 0 0 1.2em;
+  padding-left: 1.2em;
+}
+
 /* ---------- Contact page ---------- */
 
 .contact-block {
