@@ -11,6 +11,7 @@ Every push to `main` auto-redeploys.
 ```
 index.html          homepage — photo feed
 photography.html    photo gallery + lightbox
+sports.html         unlisted sports & events gallery (direct link only)
 video.html          video page (Bunny Stream embed)
 about.html          portrait + bio + services + contact links
 contact.html        email + social
@@ -25,5 +26,6 @@ content/images/     portfolio photography
 
 - **Adding photos**: add an `<a>`/`<img>` pair to the gallery grid in `index.html` or `photography.html`. The `<a href>` is the full-size image shown in the lightbox, the `<img src>` is the image in the grid — they can be the same file (lazy loading keeps it acceptable).
 - **Adding videos**: duplicate the `.video-embed` block in `video.html` and swap in the Bunny Stream player URL.
+- **Sports page**: `sports.html` is **unlisted** — it is not in the navigation and has `<meta name="robots" content="noindex">`, so it only appears on direct link. To add photos, drop files into `content/images/sports/` and swap the marked `<!-- REPLACE -->` placeholders in `sports.html`.
 - **Email**: the address is deliberately obfuscated — it lives as vector outlines in `assets/img/email.svg` and is assembled from parts in `assets/js/main.js`. To change it, edit the `user`/`domain`/`tld` variables in `main.js` and regenerate the SVG paths.
 - **Social links**: Instagram URL appears on `about.html` and `contact.html`.
